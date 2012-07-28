@@ -56,7 +56,7 @@ class SpecialEnroll extends SpecialEPPage {
 			$this->showWarning( wfMessage(  'ep-enroll-no-id' ) );
 		}
 		else {
-			$course = EPCourses::singleton()->get( $args[0] );
+			$course = EPCourses::singleton()->getFromTitle( $args[0] );
 
 			if ( $course === false ) {
 				$this->showWarning( wfMessage( 'ep-enroll-invalid-id' ) );

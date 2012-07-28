@@ -231,5 +231,4 @@ class ViewCourseAction extends EPViewAction {
 			$user->isAllowed( 'ep-bulkdelcourses' ) && $user->getOption( 'ep_bulkdelcourses' ),
 		), parent::getCacheKey() );
 	}
-
 }

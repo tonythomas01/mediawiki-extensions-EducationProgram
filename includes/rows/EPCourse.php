@@ -523,7 +523,7 @@ class EPCourse extends EPPageObject {
 	 */
 	public function setField( $name, $value ) {
 		switch ( $name ) {
-			case 'mc':
+			case 'name':
 				$value = str_replace( '_', ' ', $value );
 				break;
 			case 'instructors':
